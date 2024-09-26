@@ -35,7 +35,7 @@ def classify_article_bart(article_content):
     return result['labels'][0]  # Return the highest-scoring label
 
 # Set up NewsAPI parameters
-API_KEY = "214c8ee3b0c74687909db7125f06aff2"
+API_KEY = os.getenv('keykeykey')
 BASE_URL = 'https://newsapi.org/v2/everything'
 
 # Get today's date
